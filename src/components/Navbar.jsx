@@ -51,15 +51,16 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex", background: "transparent" }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ background: "transparent" }}>
-        <Toolbar>
+        <Toolbar style={{ margin: "0", padding: "0" }}>
           <IconButton
+            style={{ margin: "0", padding: "0" }}
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuIcon style={{ margin: "0", padding: "0" }} />
           </IconButton>
           <Typography
             variant="h6"
