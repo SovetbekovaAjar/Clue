@@ -8,8 +8,8 @@ function Video() {
       style={{
         // width: "100vh",
         // height: "100vh",
-        position: "absolute",
-        top: "0",
+        // position: "absolute",
+        // top: "0",
         bottom: "0",
         // objectFit: "cover",
       }}
@@ -22,7 +22,7 @@ function Video() {
       </video>
       <div
         style={{
-          position: "absolute",
+          // position: "absolute",
           width: "100%",
           height: "100%",
           top: "0",

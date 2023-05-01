@@ -48,19 +48,20 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", background: "transparent" }}>
+    <Box sx={{ background: "transparent" }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ background: "transparent" }}>
-        <Toolbar style={{ margin: "0", padding: "0" }}>
+        <Toolbar>
           <IconButton
-            style={{ margin: "0", padding: "0" }}
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon style={{ margin: "0", padding: "0" }} />
+            <MenuIcon />
+
+            <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
@@ -97,9 +98,6 @@ function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      </Box>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
       </Box>
     </Box>
   );

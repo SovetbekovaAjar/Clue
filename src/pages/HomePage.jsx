@@ -1,12 +1,16 @@
 import React from "react";
-import Hero from "../components/Video";
+import AboutUs3 from "../components/AboutUs3";
+import Footer from "../components/Footer";
 import Video from "../components/Video";
+import Slider from "../components/Slider";
 
 function HomePage() {
   return (
     <div>
+      <Slider />
+      <AboutUs3 />
       <Video />
-      {/* <Hero /> */}
+      <Footer />
     </div>
   );
 }
