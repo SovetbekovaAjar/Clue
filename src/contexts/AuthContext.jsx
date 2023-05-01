@@ -29,7 +29,8 @@ function AuthContext({ children }) {
 
   async function register(credential) {
     try {
-      await axios.post(`${BASE_URL}/users/`, credential);
+      console.log(...credential);
+      await axios.post(`${BASE_URL}/user/board/create/`, credential);
     } catch (error) {
       console.log(error);
     }
@@ -38,11 +39,11 @@ function AuthContext({ children }) {
   async function login(credentials) {
     try {
       const { data: tokens } = await axios.post(
-        `${BASE_URL}/jwt/create/`,
+        `${BASE_URL}/auth/jwt/create/`,
         credentials
       );
       localStorage.setItem("tokens", JSON.stringify(tokens));
-      const { data } = await $axios.get(`${BASE_URL}/users/me/`);
+      const { data } = await $axios.get(`${BASE_URL}/auth/users/me/`);
       dispatch({
         type: ACTIONS.user,
         payload: data,

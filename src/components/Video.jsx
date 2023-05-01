@@ -1,26 +1,28 @@
 import React from "react";
 import shareVideo from "../assets/share.mp4";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 function Video() {
   return (
     <div
       style={{
-        width: "100%",
-        height: "100%",
-        position: "absolute",
+        // width: "100vh",
+        // height: "100vh",
+        // position: "absolute",
         top: "0",
         bottom: "0",
-        objectFit: "cover",
+        // objectFit: "cover",
       }}
     >
       <video autoPlay loop muted>
         <source
-          style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+          // style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
           src={shareVideo}
         ></source>
       </video>
       <div
         style={{
-          position: "absolute",
+          // position: "absolute",
           width: "100%",
           height: "100%",
           top: "0",
@@ -32,7 +34,9 @@ function Video() {
         }}
         className="homeContent container"
       >
-        <button
+        <Button
+          component={Link}
+          to="/auth"
           style={{
             bottom: "20px",
             width: "250px",
@@ -43,7 +47,7 @@ function Video() {
           className="btn"
         >
           Начать
-        </button>
+        </Button>
       </div>
     </div>
   );
