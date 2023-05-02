@@ -10,6 +10,7 @@ function Video() {
         // height: "100vh",
         // position: "absolute",
         top: "0",
+
         bottom: "0",
         // objectFit: "cover",
       }}
