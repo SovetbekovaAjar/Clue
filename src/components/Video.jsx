@@ -15,7 +15,7 @@ function Video() {
         // objectFit: "cover",
       }}
     >
-      <video autoPlay loop muted>
+      <video autoPlay loop muted style={{width: '1870px',}}>
         <source
           // style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
           src={shareVideo}

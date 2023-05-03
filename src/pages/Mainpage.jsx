@@ -1,7 +1,7 @@
 import React from "react";
 import AppNar from "../components/AppNar";
 
-function Mainpage() {
+function MainPage() {
   return (
     <div>
       <AppNar />
@@ -9,4 +9,4 @@ function Mainpage() {
   );
 }
 
-export default Mainpage;
+export default MainPage;

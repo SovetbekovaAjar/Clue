@@ -11,10 +11,12 @@ function AboutUs3() {
     <Box className="flowers">
       <div className="containerMine">
         <div className="homeH1">
-          <h1>Просмотрите, сделайте, опробуйте и примерьте</h1>
+          <div className="homeH1"sx={{ width: "420px", display:"flex",flexDirection: "column",
+          fontSize: "200px", height:"300px", justifyContent: "center", alignIitems: "center",}}
+          ><h1>Просмотрите, сделайте, опробуйте и примерьте</h1></div>
           <h5>
             В Clueless вы можете находить для себя новые увлечения и идеи со
-            всего мира.
+            всего мира!
           </h5>
           <Button
             variant="contained"
