@@ -66,7 +66,7 @@ function Video() {
           {user ? (
             <Button
               onClick={() => logout()}
-              color="black"
+              // color="black"
               sx={{ mt: 2, ml: 1 }}
             >
               Logout
@@ -75,7 +75,7 @@ function Video() {
             <Button
               component={Link}
               to="/auth"
-              color="black"
+              // color="black"
               sx={{ mt: 2, ml: 1 }}
             >
               Login
