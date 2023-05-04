@@ -45,22 +45,21 @@ function Video() {
         className="homeContent container"
       >
         <div
-          data-aos="fade-up"
           className="text___2xMgH"
-          style={{ width: "30%", marginLeft: "10%", marginBottom: "10%" }}
+          style={{ width: "30%", marginLeft: "70%", marginBottom: "10%" }}
         >
           <h1
             className="title___1A6wu"
             // style={{ fontSize: "4rem", marginBottom: "1rem" }}
           >
-            Найдите идею
+            Вдохновляй и вдохновляйся
           </h1>
           <h5
             className="description___3jusX"
+            style={{ color: "black" }}
             // style={{ fontSize: "2rem", marginBottom: "3rem" }}
           >
-            Что еще вы хотите опробовать? Придумайте запрос на интересующую
-            тему, и посмотрите результаты
+            Бери и сохроняй, коментируй. Загружай и вдохновляй других
           </h5>
 
           {/* <Button
