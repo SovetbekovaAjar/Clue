@@ -39,7 +39,7 @@ function AuthContext({ children }) {
   async function login(credentials) {
     try {
       const { data: tokens } = await axios.post(
-        `${BASE_URL}/jwt/create/`,
+        `${BASE_URL}/users/`,
         credentials
       );
       localStorage.setItem("tokens", JSON.stringify(tokens));

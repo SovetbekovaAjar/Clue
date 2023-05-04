@@ -1,40 +1,90 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import "../components/aboutUs.css";
 import Button from "@mui/material/Button";
+import { useAuthContext } from "../contexts/AuthContext";
+import { Link } from "react-router-dom";
 
 function AboutUs2() {
+  const { user, logout } = useAuthContext();
   return (
     <Box className="flowers">
-      <div className="containerMine">
-        <div className="homeH1">
-          <h1>Просмотрите, сделайте, опробуйте и примерьте</h1>
-          <h5>
+      <div className="containerMine" style={{ height: "750px" }}>
+        <div
+          data-aos="fade-up"
+          className="text___2xMgH"
+          style={{ width: "30%", marginLeft: "10%", marginBottom: "10%" }}
+        >
+          <h1 className="title___1A6wu" style={{ marginLeft: "5%" }}>
+            Просмотрите, сделайте, опробуйте и примерьте
+          </h1>
+          <h5 className="description___3jusX">
             В Clueless вы можете находить для себя новые увлечения и идеи со
             всего мира.
           </h5>
-          <Button
-            variant="contained"
-            size="small"
-            style={{ marginLeft: "35%" }}
-          >
+          <Button variant="contained" size="small">
             Посмотреть
           </Button>
         </div>
 
         <img
           style={{
-            marginLeft: "14%",
+            marginLeft: "20%",
             objectFit: "cover",
-            height: "600px",
-            width: "600px",
-            marginBottom: "100px",
+            height: "100%",
+            width: "40%",
+            // marginBottom: "100px",
           }}
-          src="https://i.pinimg.com/564x/69/87/a2/6987a267c5206a33ea638be4c2d596b3.jpg"
+          src="https://i.pinimg.com/564x/1f/91/12/1f91126e346e8e856794a2289964788c.jpg"
           alt="flowers"
         />
       </div>
     </Box>
+
+    // <Box className="flowers">
+    //   <div data-aos="fade-up" className="text___2xMgH">
+    //     <h1 className="title___1A6wu">
+    //       Просмотрите, сделайте, опробуйте и примерьте
+    //     </h1>
+    //     <h5 className="description___3jusX">
+    //       В Clueless вы можете находить для себя новые увлечения и идеи со всего
+    //       мира.
+    //     </h5>
+    //     <Button variant="contained" size="small" sx={{ mt: 2 }}>
+    //       Посмотреть
+    //     </Button>
+    //     {user ? (
+    //       <Button
+    //         onClick={() => logout()}
+    //         color="inherit"
+    //         sx={{ mt: 2, ml: 1 }}
+    //       >
+    //         Logout
+    //       </Button>
+    //     ) : (
+    //       <Button
+    //         component={Link}
+    //         to="/auth"
+    //         color="inherit"
+    //         sx={{ mt: 2, ml: 1 }}
+    //       >
+    //         Login
+    //       </Button>
+    //     )}
+    //   </div>
+
+    //   <img
+    //     style={{
+    //       float: "right",
+    //       objectFit: "cover",
+    //       height: "100%",
+    //       width: "100%",
+    //       marginBottom: "100px",
+    //     }}
+    //     src="https://i.pinimg.com/564x/1f/91/12/1f91126e346e8e856794a2289964788c.jpg"
+    //     alt="flowers"
+    //   />
+    // </Box>
   );
 }
 

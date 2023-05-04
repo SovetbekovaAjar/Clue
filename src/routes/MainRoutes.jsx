@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/HomePage";
-import AuthPage from "../pages/Auth";
-import MainPage from "../pages/Main/MainPage";
+import Auth from "../pages/Auth";
+import MinPage from "../pages/MinPage";
 
 function MainRoutes() {
   return (
@@ -11,8 +11,8 @@ function MainRoutes() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
       </Route>
-      <Route path="/auth" element={<AuthPage />} />
-      <Route path="/main" element={<MainPage />} />
+      <Route path="/main" element={<MinPage />} />
+      <Route path="/auth" element={<Auth />} />
     </Routes>
   );
 }

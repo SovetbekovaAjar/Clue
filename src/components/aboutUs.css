@@ -71,3 +71,41 @@ h5 {
     Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.text___2xMgH {
+  -webkit-align-items: stretch;
+  -moz-box-align: stretch;
+  align-items: stretch;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: end;
+  justify-content: flex-end;
+  /* margin: auto 24px 40px; */
+  /* max-width: 40%; */
+  padding: 40px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.text___2xMgH .title___1A6wu {
+  color: #000;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+.text___2xMgH .description___3jusX {
+  margin: 0 0 24px;
+  white-space: pre-wrap;
+}
