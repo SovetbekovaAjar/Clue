@@ -29,7 +29,7 @@ function AboutUS1() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://phonoteka.org/uploads/posts/2022-09/1663760766_1-phonoteka-org-p-bezhevie-oboi-na-kompyuter-vkontakte-1.jpg"
+          src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/o/r/ORcoast_BrendaJonesl.jpg?crop=0%2C231%2C4000%2C2200&wid=2000&hei=1100&scl=2.0"
           alt="Third slide"
         />
 

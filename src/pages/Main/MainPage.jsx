@@ -4,7 +4,7 @@ import AppNar from "../../components/AppNar";
 function MainPage() {
   return (
     <div>
-      <AppNar />
+      <AppNar />\
     </div>
   );
 }
