@@ -6,38 +6,36 @@ function AboutUS1() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+          src="https://abrakadabra.fun/uploads/posts/2022-02/1644219426_1-abrakadabra-fun-p-oboi-iz-pinterest-dlya-aifona-estetika-2.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Найдите свежие идеи:</h3>
+          <p>Эстетические фотографии</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://png.pngtree.com/background/20210712/original/pngtree-abstract-modern-neon-frame-background-picture-image_1178251.jpg"
+          src="https://i.artfile.ru/3300x2248_871244_[www.ArtFile.ru].jpg"
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Найдите свежие идеи:</h3>
+          <p>Идея блюд на ужин</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.vimeocdn.com/video/1327888050-9fe8a777815a07dbc8c04034eb80703d50c5dc5473705190cdf9ca532b60e2b9-d_640"
+          src="https://phonoteka.org/uploads/posts/2022-09/1663760766_1-phonoteka-org-p-bezhevie-oboi-na-kompyuter-vkontakte-1.jpg"
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Найдите свежие идеи:</h3>
+          <p>Минимализм</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -1,7 +1,7 @@
 import React from "react";
 import AppNar from "../components/AppNar";
 
-function MainPage() {
+function MinPage() {
   return (
     <div>
       <AppNar />
@@ -9,4 +9,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MinPage;

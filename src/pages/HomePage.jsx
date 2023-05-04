@@ -7,7 +7,6 @@ import AboutUS1 from "../components/AboutUs1";
 import AboutUs2 from "../components/AboutUs2";
 import Slider from "../components/Slider";
 
-
 function HomePage() {
   return (
     <div>
@@ -15,8 +14,6 @@ function HomePage() {
       <AboutUs3 />
       <AboutUs4 />
       <AboutUs2 />
-      <Slider />
-      <AboutUs3 />
       <Video />
       <Footer />
       {/* <Hero /> */}
