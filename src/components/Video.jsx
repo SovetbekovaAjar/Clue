@@ -2,8 +2,10 @@ import React from "react";
 import shareVideo from "../assets/share.mp4";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import { useAuthContext } from "../contexts/AuthContext";
 
 function Video() {
+  const { user, logout } = useAuthContext();
   return (
     <div
       style={{
@@ -61,6 +63,24 @@ function Video() {
           >
             Бери и сохроняй, коментируй. Загружай и вдохновляй других
           </h5>
+          {user ? (
+            <Button
+              onClick={() => logout()}
+              // color="black"
+              sx={{ mt: 2, ml: 1 }}
+            >
+              Logout
+            </Button>
+          ) : (
+            <Button
+              component={Link}
+              to="/auth"
+              // color="black"
+              sx={{ mt: 2, ml: 1 }}
+            >
+              Login
+            </Button>
+          )}
 
           {/* <Button
           component={Link}

@@ -6,7 +6,7 @@ import { useAuthContext } from "../contexts/AuthContext";
 import { Link } from "react-router-dom";
 
 function AboutUs2() {
-  const { user, logout } = useAuthContext();
+  // const { user, logout } = useAuthContext();
   return (
     <Box className="flowers">
       <div className="containerMine" style={{ height: "750px" }}>
@@ -53,24 +53,7 @@ function AboutUs2() {
     //     <Button variant="contained" size="small" sx={{ mt: 2 }}>
     //       Посмотреть
     //     </Button>
-    //     {user ? (
-    //       <Button
-    //         onClick={() => logout()}
-    //         color="inherit"
-    //         sx={{ mt: 2, ml: 1 }}
-    //       >
-    //         Logout
-    //       </Button>
-    //     ) : (
-    //       <Button
-    //         component={Link}
-    //         to="/auth"
-    //         color="inherit"
-    //         sx={{ mt: 2, ml: 1 }}
-    //       >
-    //         Login
-    //       </Button>
-    //     )}
+    //
     //   </div>
 
     //   <img
