@@ -1,5 +1,4 @@
 import axios from "axios";
-import { BASE_URL } from "./consts";
 
 const $axios = axios.create();
 
@@ -8,7 +7,7 @@ $axios.interceptors.request.use(
     const tokens = JSON.parse(localStorage.getItem("tokens"));
     if (tokens) {
       config.headers = {
-        Authorization: `Bearer ${tokens.access}`,
+        Authorization: `Bearer  ${tokens.access}`,
       };
     }
     return config;
@@ -41,9 +40,12 @@ async function refreshAccessToken() {
     if (!tokens) {
       return;
     }
-    const { data } = await axios.post(`${BASE_URL}/jwt/refresh/`, {
-      refresh: tokens.refresh,
-    });
+    const { data } = await axios.post(
+      "http://13.50.246.163/auth/jwt/refresh/",
+      {
+        refresh: tokens.refresh,
+      }
+    );
     localStorage.setItem({ access: data.access, refresh: tokens.refresh });
     return data.access;
   } catch (error) {

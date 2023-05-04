@@ -36,11 +36,13 @@ function Copyright(props) {
 const theme = createTheme();
 
 const AuthPage = () => {
-  const [isLogin, setIsLogin] = React.useState(true);
+  const [isLogin, setIsLogin] = React.useState(null);
   const { register, login, user } = useAuthContext();
+  console.log();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    console.log(data);
     if (isLogin) {
       login(data);
     } else {
