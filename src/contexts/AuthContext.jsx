@@ -30,7 +30,7 @@ function AuthContext({ children }) {
 
   async function register(credential) {
     try {
-      await axios.post(`${BASE_URL}/users/`, credential);
+      await axios.post(`${BASE_URL}/auth/users/`, credential);
     } catch (error) {
       console.log(error);
     }
@@ -39,7 +39,7 @@ function AuthContext({ children }) {
   async function login(credentials) {
     try {
       const { data: tokens } = await axios.post(
-        `${BASE_URL}/users/`,
+        `${BASE_URL}/auth/users/`,
         credentials
       );
       localStorage.setItem("tokens", JSON.stringify(tokens));
