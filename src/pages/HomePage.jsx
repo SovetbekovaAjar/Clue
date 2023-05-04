@@ -15,9 +15,9 @@ function HomePage() {
       <AboutUs4 />
       <AboutUs2 />
       <Video />
-      <Footer />
 
       {/* <Hero /> */}
+      <Footer />
     </div>
   );
 }
