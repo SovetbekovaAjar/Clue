@@ -157,7 +157,10 @@ export default function AppNar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "white", color: "black" }}
+      >
         <Toolbar>
           <IconButton
             size="large"
@@ -176,7 +179,7 @@ export default function AppNar() {
           >
             Clueless
           </Typography>
-          <Search>
+          <Search style={{ backgroundColor: "#dee2e6" }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -187,7 +190,7 @@ export default function AppNar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="show 4 new mails"
               color="inherit"
@@ -195,8 +198,8 @@ export default function AppNar() {
               <Badge badgeContent={4} color="error">
                 <MailIcon />
               </Badge>
-            </IconButton>
-            <IconButton
+            </IconButton> */}
+            {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
@@ -204,7 +207,7 @@ export default function AppNar() {
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton>
+            </IconButton> */}
             <IconButton
               size="large"
               edge="end"

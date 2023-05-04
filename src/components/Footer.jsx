@@ -7,7 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import AppleIcon from "@mui/icons-material/Apple";
 import GoogleIcon from "@mui/icons-material/Google";
-import apple from "../img/apple.png";
+
 function Footer() {
   return (
     <Box className="homeFooter">
