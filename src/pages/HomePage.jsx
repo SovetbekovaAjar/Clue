@@ -16,6 +16,7 @@ function HomePage() {
       <AboutUs2 />
       <Video />
       <Footer />
+
       {/* <Hero /> */}
     </div>
   );

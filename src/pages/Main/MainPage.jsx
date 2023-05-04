@@ -1,5 +1,5 @@
 import React from "react";
-import AppNar from "../components/AppNar";
+import AppNar from "../../components/AppNar";
 
 function MainPage() {
   return (

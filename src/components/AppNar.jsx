@@ -121,7 +121,7 @@ export default function AppNar() {
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
+          <Badge badgeContent={0} color="error">
             <MailIcon />
           </Badge>
         </IconButton>
@@ -133,7 +133,7 @@ export default function AppNar() {
           aria-label="show 17 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={17} color="error">
+          <Badge badgeContent={0} color="error">
             <NotificationsIcon />
           </Badge>
         </IconButton>
@@ -173,7 +173,7 @@ export default function AppNar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            Clueless
           </Typography>
           <Search>
             <SearchIconWrapper>
