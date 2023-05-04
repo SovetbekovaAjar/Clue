@@ -179,7 +179,7 @@ export default function AppNar() {
           >
             Clueless
           </Typography>
-          <Search style={{ backgroundColor: "#dee2e6" }}>
+          {/* <Search style={{ backgroundColor: "#dee2e6" }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -187,7 +187,7 @@ export default function AppNar() {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
-          </Search>
+          </Search> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {/* <IconButton
@@ -208,7 +208,7 @@ export default function AppNar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton> */}
-            <IconButton
+            {/* <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -218,7 +218,7 @@ export default function AppNar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton

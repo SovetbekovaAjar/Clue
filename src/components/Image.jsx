@@ -1,10 +1,12 @@
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import "./img.css";
 
 export default function Image() {
   return (
     <ImageList
+      className="signup img"
       sx={{ width: 1280, height: 600 }}
       variant="woven"
       cols={3}
@@ -96,5 +98,17 @@ const itemData = [
   {
     img: "https://i.pinimg.com/474x/61/8b/3d/618b3d63e17863783f4010e1d5a142e4.jpg",
     title: "луна",
+  },
+  {
+    img: "https://i.pinimg.com/564x/a4/3b/e1/a43be1fe03a0908bf7b088bda312c941.jpg",
+    title: "луна",
+  },
+  {
+    img: "https://i.pinimg.com/564x/e6/4c/50/e64c5098ac2fe14d715bbcca1d22e676.jpg",
+    title: "лунаcsc",
+  },
+  {
+    img: "https://i.pinimg.com/236x/04/91/c8/0491c854514d741abfa2cb00bcb74832.jpg",
+    title: "луcfdhна",
   },
 ];

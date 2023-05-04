@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import "../components/aboutUs.css";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 function AboutUs3() {
   return (
@@ -19,7 +20,7 @@ function AboutUs3() {
             Что еще вы хотите опробовать? Придумайте запрос на интересующую
             тему, и посмотрите результаты
           </h5>
-          <Button variant="contained" size="small">
+          <Button component={Link} to="/main" variant="contained" size="small">
             Посмотреть
           </Button>
         </div>

@@ -1,69 +1,78 @@
 import React from "react";
+import {
+  FaPinterest,
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+} from "react-icons/fa";
+import { FcCloseUpMode } from "react-icons/fc";
+import { GrMail } from "react-icons/gr";
 import "./Footer.css";
-import { Box } from "@mui/material";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import AppleIcon from "@mui/icons-material/Apple";
-import GoogleIcon from "@mui/icons-material/Google";
 
-function Footer() {
+const Footer = () => {
   return (
-    <Box className="homeFooter">
-      <footer className="footer">
-        <Box className="containerFooter">
-          <div className="row">
-            <div className="col-md-4 col-sm-12">
-              <h3>О нас</h3>
-            </div>
-            <div className="col-md-4 col-sm-12">
-              <h3>Контакты</h3>
-            </div>
-            <div className="col-md-4 col-sm-12">
-              <h3>Социальные сети</h3>
-              <Box className="icons">
-                <InstagramIcon />
-                <TelegramIcon />
-                <FacebookIcon />
-                <TwitterIcon />
-              </Box>
-            </div>
-            <div className="col-md-4 col-sm-12">
-              <h3>Установить приложение</h3>
-              <Box className="icons">
-                <AppleIcon style={{ marginTop: "5%", fontSize: "250%" }} />
-                <h4 style={{ marginLeft: "10px" }}>загрузите в Aplle Store</h4>
-              </Box>
-              <Box className="icons">
-                <GoogleIcon style={{ marginTop: "5%", fontSize: "250%" }} />
-                <h4 style={{ marginLeft: "10px" }}>Доступно в Google Play</h4>
-              </Box>
-
-              {/* <img src={apple} alt="" /> */}
-              <ul className="social">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </Box>
-      </footer>
-    </Box>
+    <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__logo">
+          <FcCloseUpMode size={32} className="logo__icon" />
+          <span className="logo__text">Clueless</span>
+        </div>
+        <div className="footer__menu">
+          <ul className="menu__list">
+            <li className="menu__item">
+              <a href="#" className="menu__link">
+                About
+              </a>
+            </li>
+            <li className="menu__item">
+              <a href="#" className="menu__link">
+                Blog
+              </a>
+            </li>
+            <li className="menu__item">
+              <a href="#" className="menu__link">
+                Terms of Service
+              </a>
+            </li>
+            <li className="menu__item">
+              <a href="#" className="menu__link">
+                Privacy Policy
+              </a>
+            </li>
+            <li className="menu__item">
+              <a href="#" className="menu__link">
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer__social">
+          <ul className="social__list">
+            <li className="social__item">
+              <a href="#" className="social__link">
+                <FaInstagram size={24} />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#" className="social__link">
+                <FaTwitter size={24} />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#" className="social__link">
+                <FaFacebookF size={24} />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#" className="social__link">
+                <GrMail size={24} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

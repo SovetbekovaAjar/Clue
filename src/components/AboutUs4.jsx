@@ -10,7 +10,7 @@ function AboutUs4() {
             // marginLeft: "39%",
             float: "left",
             objectFit: "cover",
-            height: "",
+            // height: "",
             width: "100%",
             // marginBottom: "10%",
           }}
@@ -35,13 +35,6 @@ function AboutUs4() {
               Сохраняйте понравившиеся идеи, чтобы вернуться к ним в будущем.
             </h5>
           </div>
-          {/* <Button
-            variant="contained"
-            size="small"
-            style={{ marginLeft: "35%" }}
-          >
-            Посмотреть
-          </Button> */}
         </div>
       </div>
     </Box>

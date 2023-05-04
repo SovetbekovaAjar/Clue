@@ -22,7 +22,7 @@ function AboutUs2() {
             В Clueless вы можете находить для себя новые увлечения и идеи со
             всего мира.
           </h5>
-          <Button variant="contained" size="small">
+          <Button component={Link} to="/main" variant="contained" size="small">
             Посмотреть
           </Button>
         </div>
@@ -40,34 +40,6 @@ function AboutUs2() {
         />
       </div>
     </Box>
-
-    // <Box className="flowers">
-    //   <div data-aos="fade-up" className="text___2xMgH">
-    //     <h1 className="title___1A6wu">
-    //       Просмотрите, сделайте, опробуйте и примерьте
-    //     </h1>
-    //     <h5 className="description___3jusX">
-    //       В Clueless вы можете находить для себя новые увлечения и идеи со всего
-    //       мира.
-    //     </h5>
-    //     <Button variant="contained" size="small" sx={{ mt: 2 }}>
-    //       Посмотреть
-    //     </Button>
-    //
-    //   </div>
-
-    //   <img
-    //     style={{
-    //       float: "right",
-    //       objectFit: "cover",
-    //       height: "100%",
-    //       width: "100%",
-    //       marginBottom: "100px",
-    //     }}
-    //     src="https://i.pinimg.com/564x/1f/91/12/1f91126e346e8e856794a2289964788c.jpg"
-    //     alt="flowers"
-    //   />
-    // </Box>
   );
 }
 

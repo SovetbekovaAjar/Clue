@@ -63,7 +63,7 @@ function Video() {
           >
             Бери и сохроняй, коментируй. Загружай и вдохновляй других
           </h5>
-          {user ? (
+          {/* {user ? (
             <Button
               onClick={() => logout()}
               // color="black"
@@ -80,22 +80,22 @@ function Video() {
             >
               Login
             </Button>
-          )}
+          )} */}
 
-          {/* <Button
-          component={Link}
-          to="/auth"
-          style={{
-            width: "250px",
-            height: "50px",
-            backgroundColor: "white",
-            color: "black",
-            fontSize: "1.2rem",
-          }}
-          className="btn"
-        >
-          Начать
-        </Button> */}
+          <Button
+            component={Link}
+            to="/auth"
+            style={{
+              width: "250px",
+              height: "50px",
+              backgroundColor: "white",
+              color: "black",
+              fontSize: "1.2rem",
+            }}
+            className="btn"
+          >
+            Начать
+          </Button>
         </div>
       </div>
     </div>
